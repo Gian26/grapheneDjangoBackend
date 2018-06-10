@@ -145,7 +145,7 @@ STATIC_URL = '/static/'
 # Graphene
 GRAPHENE = {
     'SCHEMA':
-    'carpintariabackend.schema.schema'  # Where your Graphene schema lives
+    'graphenebackend.schema.schema'  # Where your Graphene schema lives
 }
 
 #JWT_EXPIRATION_DELTA=minutes=5
@@ -162,13 +162,13 @@ GRAPHQL_JWT = {
 CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ORIGIN_WHITELIST = (
-    'localhost:4200/', 'localhost:8000/', 'https://deepdata.com'
+    'localhost:4200/', 'localhost:8000/'
     # 'http://127.0.0.1:8000/public/graphql/',
     # 'http://www.deepdatat.com.s3-website-us-west-2.amazonaws.com/'
 )
 
 CSRF_TRUSTED_ORIGINS = (
-    'localhost:4200/', 'localhost:8000/', 'https://deepdata.com'
+    'localhost:4200/', 'localhost:8000/'
     # 'http://www.deepdatat.com.s3-website-us-west-2.amazonaws.com/'
 )
 
